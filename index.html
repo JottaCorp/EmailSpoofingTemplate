@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Email Spoofing - JOTTA</title>
+	<meta charset="UTF-8">
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/richtext.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="src/jquery.richtext.js"></script>
+
+</head>
+<body>
+<?php echo $output; ?>
+
+	<div class="container-contact100">
+
+		<div class="wrap-contact100">
+		    <form class="contact100-form validate-form" enctype="multipart/form-data" action="script.php" method="post">
+		        <a href="https://linktr.ee/Jotta" target="_blank">
+		            <span class="contact100-form-title">
+					Email Spoofing - JOTTA
+				</span>
+				<span class="contact100-form-subtitle">
+					¿Quieres aprender mucho más?
+				</span>
+		            </a>
+				
+
+				<div class="wrap-input100 validate-input" data-validate="Escriba el Email que quiere suplantar">
+					<input class="input100" type="email" name="desde" placeholder="De: fake@fake.com">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Escriba el Email al que quiere enviar el mensaje">
+					<input class="input100" type="email" name="para" placeholder="Para: pruebasjotta@gmail.com">
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100" >
+					<input class="input100" type="email" name="reply" placeholder="A quien responde: micorreo@gmail.com">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100">
+					<input class="input100" type="text" name="asunto" placeholder="Asunto">
+					<span class="focus-input100"></span>
+				</div>
+<div class="wrap-input100">
+					<textarea class="content input100" name="mensaje" placeholder="Mensaje"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<input type="file" name="file" id="file" />
+
+				<div class="container-contact100-form-btn">
+					<button id="submit" name="submit" class="contact100-form-btn" value="Enviar">
+						<span>
+							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+							Enviar
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="dropDownSelect1"></div>
+	
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+</body>
+</html>
